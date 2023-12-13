@@ -12,7 +12,7 @@ interface Props {
 const AppHeader: React.FC<Props> = ({ showButton, onPopularMovies }: Props) => (
   <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
-    <h1 className="App-title">Moovier</h1>
+    <h1 className="app-title">Moovier</h1>
     <div className="back-btn">
       {showButton && (
         <Button type="dashed" onClick={onPopularMovies} size={"large"}>

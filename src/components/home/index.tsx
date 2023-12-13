@@ -1,6 +1,5 @@
 import * as React from "react";
 
-import Search from "../search";
 import Movie from "../movie";
 import AppHeader from "../app_header";
 import BackdropWrapper from "../backdrop_wrapper";
@@ -27,8 +26,6 @@ class Home extends React.Component<Props> {
     const {
       type,
       onPopularMovies,
-      onSearch,
-      searchQuery,
       movies,
       genres,
       onNewPageRequest,
@@ -39,7 +36,6 @@ class Home extends React.Component<Props> {
           showButton={type === "search"}
           onPopularMovies={onPopularMovies}
         />
-        <Search onSearch={onSearch} query={searchQuery} />
         <Movie
           movies={movies}
           genres={genres}
